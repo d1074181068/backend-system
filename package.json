@@ -1,0 +1,14 @@
+{
+  "name": "erp",
+  "version": "1.0.0",
+  "description": "ERP_system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiang",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

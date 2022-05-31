@@ -1,0 +1,21 @@
+.order_nav .nav-link {
+    color: red;
+
+    &.active {
+        background-color: $danger;
+    }
+}
+
+.order_list {
+    top: 80px;
+
+    & a.active {
+        background-color: $danger;
+        border: $danger;
+    }
+}
+
+
+.update_btn:hover {
+    color: $white;
+}
