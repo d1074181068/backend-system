@@ -306,7 +306,15 @@
         </main>
     </div>
 
-
+    <script>
+        const modal = document.querySelector('#del_Modal');
+        const del_txt = document.querySelector('#del_txt');
+        modal.addEventListener('show.bs.modal', (e) => {
+            const target_btn = e.relatedTarget;
+            const order_id = target_btn.dataset.orderId;
+            del_txt.textContent = order_id;
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>

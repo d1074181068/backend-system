@@ -2,9 +2,6 @@ const aside_bar_toggleBtn = document.querySelector('#toggle_btn');
 const body = document.querySelector('body');
 const toggle_m_btn = document.querySelectorAll('.toggle_m_btn');
 const sidebar_icon = document.querySelectorAll('.bi-caret-right');
-const modal = document.querySelector('#del_Modal');
-const del_txt = document.querySelector('#del_txt');
-const confirm_del = document.querySelector('#confirm_del');
 
 aside_bar_toggleBtn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -32,11 +29,7 @@ function toggle_aside(item) {
 
 
 
-modal.addEventListener('show.bs.modal', (e) => {
-    const target_btn = e.relatedTarget;
-    const order_id = target_btn.dataset.orderId;
-    del_txt.textContent = order_id;
-})
+
 
 
 
